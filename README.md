@@ -53,7 +53,7 @@ python3 get_nasa_turbofan.py --subset FD001
 
 The downloader uses the Python standard library. It downloads NASA's original archive to `CMAPSSData.zip` and writes raw text files and generated CSVs into `video/csv/FD001/`. The archive and extracted raw text files are excluded by `.gitignore`. The three generated CSVs are included in this repository. This command regenerates the CSVs; it does not rebuild the Excel workbook.
 
-## Understand the time axis and labels
+## Time axis and labels
 
 - A time step is an engine operating cycle, represented by a cruise-condition snapshot. Calendar timestamps and elapsed seconds are not supplied.
 - Engine IDs are local to the training or test split. Training engine 1 and test engine 1 are different engines.
