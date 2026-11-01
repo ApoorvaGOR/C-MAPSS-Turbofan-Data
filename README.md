@@ -32,7 +32,7 @@ See [data documentation](data/README.md) for the workbook layout and [video docu
 
 ## Make a video
 
-The required CSV input files are included in the repository, allowing generation of a video to visualize the turbofan sensor data without downloading any additional datasets. From the repository root:
+The CSV inputs are included, so you can generate a video without downloading the NASA archive again. From the repository root:
 
 ```bash
 python3 -m pip install -r requirements.txt
@@ -53,7 +53,7 @@ python3 get_nasa_turbofan.py --subset FD001
 
 The downloader uses the Python standard library. It downloads NASA's original archive to `CMAPSSData.zip` and writes raw text files and generated CSVs into `video/csv/FD001/`. The archive and extracted raw text files are excluded by `.gitignore`. The three generated CSVs are included in this repository. This command regenerates the CSVs; it does not rebuild the Excel workbook.
 
-## Time axis and labels
+## Understand the time axis and labels
 
 - A time step is an engine operating cycle, represented by a cruise-condition snapshot. Calendar timestamps and elapsed seconds are not supplied.
 - Engine IDs are local to the training or test split. Training engine 1 and test engine 1 are different engines.
@@ -62,6 +62,8 @@ The downloader uses the Python standard library. It downloads NASA's original ar
 - The animation reveals raw readings and a trailing mean. Playback speed controls presentation speed only. Exact degradation-onset labels are not provided.
 
 ## Sources and citation
+
+See [NOTICE.md](NOTICE.md) and [LICENSE-DATA.txt](LICENSE-DATA.txt) for data provenance, the published licensing status, and the distinction between the underlying data and processing scripts. NASA's dataset catalog lists the license as unspecified; this package does not assign CDLA or MIT to the NASA data.
 
 Data source: [NASA C-MAPSS Jet Engine Simulated Data](https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data).
 
