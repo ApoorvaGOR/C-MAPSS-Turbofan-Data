@@ -32,7 +32,7 @@ See [data documentation](data/README.md) for the workbook layout and [video docu
 
 ## Make a video
 
-The CSV inputs are included, so you can generate a video without downloading the NASA archive again. From the repository root:
+The required CSV input files are included in the repository, allowing generation of a video to visualize the turbofan sensor data without downloading any additional datasets. From the repository root:
 
 ```bash
 python3 -m pip install -r requirements.txt
