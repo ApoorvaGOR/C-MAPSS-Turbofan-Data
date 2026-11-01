@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+/CMAPSSData.zip
+*.zip.part
+/video/csv/FD*/train_FD*.txt
+/video/csv/FD*/test_FD*.txt
+/video/csv/FD*/RUL_FD*.txt
